@@ -311,7 +311,7 @@ end
     change_t_via_interpolation!(integrator::DEIntegrator,t,modify_save_endpoint=Val{false}; reinitialization_method=nothing)
 
 Modifies the current `t` and changes all of the corresponding values using the local interpolation, then ensures DAE consistency (if applicable)
-with `reinitialization_method`. If the current solution
+with `reinitialization_method` if applicable. If the current solution
 has already been saved, one can provide the optional value `modify_save_endpoint` to also modify the endpoint of `sol` in the
 same manner.
 """
