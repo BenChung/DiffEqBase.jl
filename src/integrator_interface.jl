@@ -308,7 +308,7 @@ function auto_dt_reset!(integrator::DEIntegrator)
 end
 
 """
-    change_t_via_interpolation!(integrator::DEIntegrator,t,modify_save_endpoint=Val{false}; reinitialization_method=nothing)
+    change_t_via_interpolation!(integrator::DEIntegrator,t,modify_save_endpoint=Val{false}, reinitialization_method=nothing)
 
 Modifies the current `t` and changes all of the corresponding values using the local interpolation, then ensures DAE consistency (if applicable)
 with `reinitialization_method` if applicable. If the current solution
